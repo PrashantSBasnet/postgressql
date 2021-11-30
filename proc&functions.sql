@@ -1,4 +1,4 @@
-
+/*function is used when we need it to return values. Eg. select query"
 /*function with no arguments*/
 CREATE OR REPLACE FUNCTION testfunction()
     RETURNS TABLE ("id" integer, "name" varchar, "details" varchar)
@@ -38,7 +38,7 @@ select id from testfunction2(33);
 alter function testfunction2() owner to postgres; --automatically generated  --- postgres db can only access
 
 
-
+/*procedure is used when we do need returned values E.g.delete"
 ---PROCUEDURES---
 CREATE OR REPLACE PROCEDURE DELETE_CUSTOMERS (id integer)
     LANGUAGE plpgsql
