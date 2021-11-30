@@ -38,7 +38,7 @@ select id from testfunction2(33);
 alter function testfunction2() owner to postgres; --automatically generated  --- postgres db can only access
 
 
-/*procedure is used when we do need returned values E.g.delete"
+/*procedure is used when we do need returned values E.g.delete,insert" */
 ---PROCUEDURES---
 CREATE OR REPLACE PROCEDURE DELETE_CUSTOMERS (id integer)
     LANGUAGE plpgsql
